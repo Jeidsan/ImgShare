@@ -16,5 +16,21 @@ namespace ImgShare
 		{
 			InitializeComponent ();
 		}
-	}
+
+
+        private async void btnPublicar_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Desculpe", "Esta funcionalidade ainda não foi implementada.", "OK");
+        }
+
+        private async void btnMapa_Clicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new Busca();          
+        }
+
+        private async void btnCaptura_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Desculpe", "Esta funcionalidade ainda não foi implementada.", "OK");
+        }
+    }
 }

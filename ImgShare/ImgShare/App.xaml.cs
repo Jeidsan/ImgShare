@@ -13,7 +13,7 @@ namespace ImgShare
 		{
 			InitializeComponent();
 
-			MainPage = new ImgShare.Busca();
+			MainPage = new ImgShare.Captura();
 		}
 
 		protected override void OnStart ()

@@ -4,9 +4,28 @@
              x:Class="ImgShare.Imagem">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image 
+                x:Uid="imgImagem" 
+                x:Name="imgImagem"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="FillAndExpand" />
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="End">
+                <Button x:Uid="btnMapa"
+                        x:Name="btnMapa"
+                        Text="Mapa"
+                        WidthRequest="100"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="End" 
+                        Clicked="btnMapa_Clicked"/>
+                <Button x:Uid="btnCaptura"
+                        x:Name="btnCaptura"
+                        Text="Captura"
+                        WidthRequest="100"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="End" 
+                        Clicked="btnCaptura_Clicked"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -14,7 +14,17 @@ namespace ImgShare
 	{
 		public Imagem ()
 		{
-			InitializeComponent ();
+			InitializeComponent ();          
 		}
-	}
+
+        private void btnCaptura_Clicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new Captura();
+        }
+
+        private void btnMapa_Clicked(object sender, EventArgs e)
+        {            
+            Application.Current.MainPage = new Busca();
+        }
+    }
 }

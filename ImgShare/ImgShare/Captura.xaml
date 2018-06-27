@@ -4,9 +4,41 @@
              x:Class="ImgShare.Captura">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Image 
+                x:Uid="imgImagem" 
+                x:Name="imgImagem"
+                Aspect="AspectFill"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <StackLayout 
+                Orientation="Horizontal" 
+                HorizontalOptions="Center" 
+                VerticalOptions="End" >
+                <Button 
+                    x:Uid="btnMapa" 
+                    x:Name="btnMapa" 
+                    Text="Mapa" 
+                    WidthRequest="100" 
+                    HorizontalOptions="CenterAndExpand" 
+                    VerticalOptions="End" 
+                    Clicked="btnMapa_Clicked" />
+                <Button 
+                    x:Uid="btnCaptura" 
+                    x:Name="btnCaptura" 
+                    Text="Capturar" 
+                    WidthRequest="100" 
+                    HorizontalOptions="CenterAndExpand" 
+                    VerticalOptions="End" 
+                    Clicked="btnCaptura_Clicked" />
+                <Button 
+                    x:Uid="btnPublicar" 
+                    x:Name="btnPublicar" 
+                    Text="Publicar" 
+                    WidthRequest="100" 
+                    HorizontalOptions="CenterAndExpand" 
+                    VerticalOptions="End" 
+                    Clicked="btnPublicar_Clicked" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

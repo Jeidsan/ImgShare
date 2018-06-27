@@ -4,10 +4,11 @@
              x:Class="ImgShare.Imagem">
     <ContentPage.Content>
         <StackLayout>
-            <Image x:Uid="imgImagem" 
-                   x:Name="imgImagem"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="FillAndExpand" />
+            <Image 
+                x:Uid="imgImagem" 
+                x:Name="imgImagem"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="FillAndExpand" />
             <StackLayout Orientation="Horizontal"
                          VerticalOptions="End">
                 <Button x:Uid="btnMapa"

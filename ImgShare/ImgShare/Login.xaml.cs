@@ -16,5 +16,11 @@ namespace ImgShare
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void btnEntrar_Clicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new Cadastro();
+            //DisplayAlert("Login", "Login e senha Incorreto","Ok");
+        }
+    }
 }

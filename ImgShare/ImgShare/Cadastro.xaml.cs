@@ -16,5 +16,11 @@ namespace ImgShare
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void btnEntrar_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Confirmar dados", "Dados Salvos", "Ok");
+            Application.Current.MainPage = new Login();
+        }
+    }
 }

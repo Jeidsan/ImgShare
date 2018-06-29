@@ -3,10 +3,60 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ImgShare.Cadastro">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Spacing="10">
+            
+            <Entry x:Uid="txtName"
+                   x:Name="txtName"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   WidthRequest="350"
+                   Placeholder="Nome"
+                   TextColor="Black"
+                   Margin="15"
+                   />
+            <Entry x:Uid="txtEmail"
+                   x:Name="txtEmail"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   WidthRequest="350"
+                   Placeholder="Endereço de Email"
+                   TextColor="Black"
+                   />
+            <Entry x:Uid="txtUserName"
+                   x:Name="txtNomeUsuario"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   WidthRequest="350"
+                   Placeholder="Usuário"
+                   TextColor="Black"
+                   />
+            <Entry x:Uid="txtUserPassword"
+                   x:Name="txtUserPassword"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   WidthRequest="350"
+                   Placeholder="Senha"
+                   TextColor="Black"
+                   IsPassword="True"
+                   />
+            <Entry x:Uid="txtConfirmUserPassword"
+                   x:Name="txtConfirmUserPassword"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   WidthRequest="350"
+                   Placeholder="Confirmar Senha"
+                   TextColor="Black"
+                   IsPassword="True"
+                   />
+            <Button x:Uid="btnConfirmar"
+                    x:Name="btnConfirmar"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Confirmar"
+                    BackgroundColor="Aquamarine"
+                    WidthRequest="125"
+                    TextColor="Black"
+                    Clicked="btnEntrar_Clicked"
+                    />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -3,10 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ImgShare.Login">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout VerticalOptions="Center">
+            <Entry x:Uid="txtLogin"
+                   x:Name="txtLogin"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   WidthRequest="250"
+                   Placeholder="Usuário"
+                   TextColor="Black"
+                   
+                   />
+            <Entry x:Uid="txtSenha"
+                   x:Name="txtSenha"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   WidthRequest="250"
+                   Placeholder="Senha"
+                   TextColor="Black"
+                   IsPassword="True"
+                   />
+            <Button x:Uid="btnEntrar"
+                    x:Name="btnEntrar"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Entrar"
+                    BackgroundColor="Aquamarine"
+                    WidthRequest="125"
+                    TextColor="Black"
+                    Clicked="btnEntrar_Clicked"
+                    />
+            <Label Text="Novo Por Aqui ?" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Label>
+            <Label Text="Cadastre-se." HorizontalOptions="Center" HorizontalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                     <TapGestureRecognizer Tapped="btnEntrar_Clicked"/>
+                </Label.GestureRecognizers>
+               </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

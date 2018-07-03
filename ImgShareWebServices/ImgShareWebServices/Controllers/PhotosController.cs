@@ -121,5 +121,15 @@ namespace ImgShareWebServices.Controllers
         {
             return _context.Photo.Any(e => e.Id == id);
         }
+
+        [HttpGet("{latitude}/{longitude}")]
+        public List<Models.Photo> GetPhotosLocation(string latitude, string longitude)
+        {
+            // Deverá encontrar no banco as fotos que estão ao perto da localizacao recebida e adicionar
+            // todas essas fotos em uma lista
+
+            return new List<Photo>();
+        }
+
     }
 }

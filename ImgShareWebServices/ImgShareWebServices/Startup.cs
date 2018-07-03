@@ -33,8 +33,6 @@ namespace ImgShareWebServices
             services.AddDbContext<PhotoContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("PhotoContext")));
 
-            services.AddDbContext<ImgShareContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("ImgShareContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

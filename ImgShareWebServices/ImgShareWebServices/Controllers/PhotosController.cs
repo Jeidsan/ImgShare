@@ -13,9 +13,9 @@ namespace ImgShareWebServices.Controllers
     [Route("api/Photos")]
     public class PhotosController : Controller
     {
-        private readonly ImgShareContext _context;
+        private readonly PhotoContext _context;
 
-        public PhotosController(ImgShareContext context)
+        public PhotosController(PhotoContext context)
         {
             _context = context;
         }

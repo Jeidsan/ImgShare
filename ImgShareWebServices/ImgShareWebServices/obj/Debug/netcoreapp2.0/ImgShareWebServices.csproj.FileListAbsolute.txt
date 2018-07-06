@@ -9,3 +9,14 @@ c:\users\rafae\source\repos\ImgShareWebServices\ImgShareWebServices\obj\Debug\ne
 c:\users\rafae\source\repos\ImgShareWebServices\ImgShareWebServices\bin\Debug\netcoreapp2.0\ImgShareWebServices.pdb
 c:\users\rafae\source\repos\ImgShareWebServices\ImgShareWebServices\obj\Debug\netcoreapp2.0\ImgShareWebServices.dll
 c:\users\rafae\source\repos\ImgShareWebServices\ImgShareWebServices\obj\Debug\netcoreapp2.0\ImgShareWebServices.pdb
+C:\Users\Luiz Henrique\Source\Repos\ImgShare\ImgShareWebServices\ImgShareWebServices\obj\Debug\netcoreapp2.0\ImgShareWebServices.csprojResolveAssemblyReference.cache
+C:\Users\Luiz Henrique\Source\Repos\ImgShare\ImgShareWebServices\ImgShareWebServices\obj\Debug\netcoreapp2.0\ImgShareWebServices.csproj.CoreCompileInputs.cache
+C:\Users\Luiz Henrique\Source\Repos\ImgShare\ImgShareWebServices\ImgShareWebServices\obj\Debug\netcoreapp2.0\ImgShareWebServices.AssemblyInfoInputs.cache
+C:\Users\Luiz Henrique\Source\Repos\ImgShare\ImgShareWebServices\ImgShareWebServices\obj\Debug\netcoreapp2.0\ImgShareWebServices.AssemblyInfo.cs
+C:\Users\Luiz Henrique\Source\Repos\ImgShare\ImgShareWebServices\ImgShareWebServices\obj\Debug\netcoreapp2.0\ImgShareWebServices.dll
+C:\Users\Luiz Henrique\Source\Repos\ImgShare\ImgShareWebServices\ImgShareWebServices\obj\Debug\netcoreapp2.0\ImgShareWebServices.pdb
+C:\Users\Luiz Henrique\Source\Repos\ImgShare\ImgShareWebServices\ImgShareWebServices\bin\Debug\netcoreapp2.0\ImgShareWebServices.deps.json
+C:\Users\Luiz Henrique\Source\Repos\ImgShare\ImgShareWebServices\ImgShareWebServices\bin\Debug\netcoreapp2.0\ImgShareWebServices.runtimeconfig.json
+C:\Users\Luiz Henrique\Source\Repos\ImgShare\ImgShareWebServices\ImgShareWebServices\bin\Debug\netcoreapp2.0\ImgShareWebServices.runtimeconfig.dev.json
+C:\Users\Luiz Henrique\Source\Repos\ImgShare\ImgShareWebServices\ImgShareWebServices\bin\Debug\netcoreapp2.0\ImgShareWebServices.dll
+C:\Users\Luiz Henrique\Source\Repos\ImgShare\ImgShareWebServices\ImgShareWebServices\bin\Debug\netcoreapp2.0\ImgShareWebServices.pdb

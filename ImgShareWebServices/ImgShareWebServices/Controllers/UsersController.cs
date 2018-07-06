@@ -13,9 +13,9 @@ namespace ImgShareWebServices.Controllers
     [Route("api/Users")]
     public class UsersController : Controller
     {
-        private readonly ImgShareContext _context;
+        private readonly UserContext _context;
 
-        public UsersController(ImgShareContext context)
+        public UsersController(UserContext context)
         {
             _context = context;
         }
@@ -36,31 +36,31 @@ namespace ImgShareWebServices.Controllers
                 return BadRequest(ModelState);
             }
 
-            var User = await _context.User.SingleOrDefaultAsync(m => m.Id == id);
+            var user = await _context.User.SingleOrDefaultAsync(m => m.Id == id);
 
-            if (User == null)
+            if (user == null)
             {
                 return NotFound();
             }
 
-            return Ok(User);
+            return Ok(user);
         }
 
         // PUT: api/Users/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUser([FromRoute] int id, [FromBody] User User)
+        public async Task<IActionResult> PutUser([FromRoute] int id, [FromBody] User user)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != User.Id)
+            if (id != user.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(User).State = EntityState.Modified;
+            _context.Entry(user).State = EntityState.Modified;
 
             try
             {
@@ -83,17 +83,17 @@ namespace ImgShareWebServices.Controllers
 
         // POST: api/Users
         [HttpPost]
-        public async Task<IActionResult> PostUser([FromBody] User User)
+        public async Task<IActionResult> PostUser([FromBody] User user)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            _context.User.Add(User);
+            _context.User.Add(user);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUser", new { id = User.Id }, User);
+            return CreatedAtAction("GetUser", new { id = user.Id }, user);
         }
 
         // DELETE: api/Users/5
@@ -105,21 +105,29 @@ namespace ImgShareWebServices.Controllers
                 return BadRequest(ModelState);
             }
 
-            var User = await _context.User.SingleOrDefaultAsync(m => m.Id == id);
-            if (User == null)
+            var user = await _context.User.SingleOrDefaultAsync(m => m.Id == id);
+            if (user == null)
             {
                 return NotFound();
             }
 
-            _context.User.Remove(User);
+            _context.User.Remove(user);
             await _context.SaveChangesAsync();
 
-            return Ok(User);
+            return Ok(user);
         }
 
         private bool UserExists(int id)
         {
             return _context.User.Any(e => e.Id == id);
+        }
+
+        // GET: api/Users/5
+        [HttpGet("{user}/{password}")]
+        private bool authenticate(string user, string password)
+        {
+            //_context.User.Any(e => e.Name == user);
+            return false;
         }
     }
 }

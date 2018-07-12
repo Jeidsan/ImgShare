@@ -14,7 +14,7 @@ namespace ImgShare
 	{
 		public Imagem ()
 		{
-			InitializeComponent ();          
+			InitializeComponent();    
 		}
 
         private void btnCaptura_Clicked(object sender, EventArgs e)

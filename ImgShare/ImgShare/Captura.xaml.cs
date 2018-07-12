@@ -20,7 +20,6 @@ namespace ImgShare
             InitializeComponent();
         }
 
-
         private async void btnPublicar_Clicked(object sender, EventArgs e)
         {
             await DisplayAlert("Desculpe", "Esta funcionalidade ainda não foi implementada.", "OK");
@@ -43,11 +42,14 @@ namespace ImgShare
                     return;
                 }
 
-                var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions() { SaveToAlbum = true });
+                var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions() {                   
+                    SaveToAlbum = false,
+                    PhotoSize = PhotoSize.Medium
+                });
 
                 if (file == null) return;
- 
-                imgImagem.Source = ImageSource.FromStream(() =>
+
+                imgImagem.Source = ImageSource.FromStream(() => 
                 {
                     var stream = file.GetStream();
                     file.Dispose();

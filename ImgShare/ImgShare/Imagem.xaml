@@ -24,7 +24,7 @@
                         WidthRequest="100"
                         HorizontalOptions="CenterAndExpand"
                         VerticalOptions="End" 
-                        Clicked="btnCaptura_Clicked"/>
+                        Clicked="btnCaptura_Clicked" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

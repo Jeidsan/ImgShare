@@ -6,10 +6,10 @@
         <StackLayout>
             <Image 
                 x:Uid="imgImagem" 
-                x:Name="imgImagem"
-                Aspect="AspectFill"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                x:Name="imgImagem"               
+                BackgroundColor="Azure"
+                VerticalOptions="FillAndExpand" 
+                HorizontalOptions="FillAndExpand" />
             <StackLayout 
                 Orientation="Horizontal" 
                 HorizontalOptions="Center" 

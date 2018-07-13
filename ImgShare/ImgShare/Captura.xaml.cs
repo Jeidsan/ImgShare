@@ -17,7 +17,7 @@ namespace ImgShare
     {
         public Captura()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private async void btnPublicar_Clicked(object sender, EventArgs e)

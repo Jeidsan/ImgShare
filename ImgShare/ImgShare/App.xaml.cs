@@ -13,7 +13,9 @@ namespace ImgShare
 		{
 			InitializeComponent();
 
-			MainPage = new ImgShare.Captura();
+            Application.Current.Properties["baseAddress"] = "http://localhost:52790/api";
+
+            MainPage = new ImgShare.Login();
 		}
 
 		protected override void OnStart ()

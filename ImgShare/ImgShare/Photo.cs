@@ -1,18 +1,18 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 
 namespace ImgShare.Domain
 {
-    public class User
+    public class Photo
     {
-        [Key]
         public int Id { get; set; }
- 
-        public string Name { get; set; }
-  
-        public string Email { get; set; }
 
-        public string Password { get; set; }
+        public string Name { get; set; }
+
+        public string PhotoHex { get; set; }
+
+        public string Latitude { get; set; }
+
+        public string Longitude { get; set; }
 
         public DateTime InclusionDate { get; set; }
     }
